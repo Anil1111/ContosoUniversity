@@ -54,10 +54,10 @@ namespace ContosoUniversity.Controllers
                     students = students.OrderByDescending(s => s.LastName);
                     break;
                 case "date_asc":
-                    students = students.OrderBy(s => s.RegistrationDate);
+                    students = students.OrderBy(s => s.EnrollmentDate);
                     break;
                 case "date_desc":
-                    students = students.OrderByDescending(s => s.RegistrationDate);
+                    students = students.OrderByDescending(s => s.EnrollmentDate);
                     break;
                 default:
                     students = students.OrderBy(s => s.LastName);
@@ -102,7 +102,7 @@ namespace ContosoUniversity.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-            [Bind("RegistrationDate,FirstMidName,LastName")] Student student)
+            [Bind("EnrollmentDate,FirstMidName,LastName")] Student student)
         {
             try
             {
@@ -153,7 +153,7 @@ namespace ContosoUniversity.Controllers
             if (await TryUpdateModelAsync<Student>(
                 studentToUpdate,
                 "",
-                s => s.FirstMidName, s => s.LastName, s => s.RegistrationDate))
+                s => s.FirstMidName, s => s.LastName, s => s.EnrollmentDate))
             {
                 try
                 {

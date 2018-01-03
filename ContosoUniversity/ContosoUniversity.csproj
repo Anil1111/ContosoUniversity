@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20180101194851_LastNameErrorMessage.cs" />
     <Compile Remove="Migrations\20180101194851_LastNameErrorMessage.Designer.cs" />
+    <Compile Remove="Migrations\20180103003606_testMigration.cs" />
+    <Compile Remove="Migrations\20180103003606_testMigration.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ContosoUniversity.Models.SchoolViewModels
 {
-    public class RegistrationDateGroup
+    public class EnrollmentDateGroup
     {
         [DataType(DataType.Date)]
-        public DateTime? RegistrationDate { get; set; }
+        public DateTime? EnrollmentDate { get; set; }
 
         public int StudentCount { get; set; }
     }

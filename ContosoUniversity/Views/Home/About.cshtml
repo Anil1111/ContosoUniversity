@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.RegistrationDateGroup>
+﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
 
     @{ 
         ViewData["Title"] = "Student Body Statistics";
@@ -9,7 +9,7 @@
 <table>
     <tr>
         <th>
-            Registration Date
+            Enrollment Date
         </th>
         <th>
             Students
@@ -20,7 +20,7 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.RegistrationDate)
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
             </td>
             <td>
                 @item.StudentCount

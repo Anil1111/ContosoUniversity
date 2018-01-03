@@ -25,12 +25,12 @@ namespace ContosoUniversity.Controllers
 
         public async Task<ActionResult> About()
         {
-            IQueryable<RegistrationDateGroup> data =
+            IQueryable<EnrollmentDateGroup> data =
                 from student in _context.Students
-                group student by student.RegistrationDate into dateGroup
-                select new RegistrationDateGroup()
+                group student by student.EnrollmentDate into dateGroup
+                select new EnrollmentDateGroup()
                 {
-                    RegistrationDate = dateGroup.Key,
+                    EnrollmentDate = dateGroup.Key,
                     StudentCount = dateGroup.Count()
                 };
             return View(await data.AsNoTracking().ToListAsync());

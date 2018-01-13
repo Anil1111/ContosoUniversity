@@ -9,6 +9,10 @@
     <Compile Remove="Migrations\20180101194851_LastNameErrorMessage.Designer.cs" />
     <Compile Remove="Migrations\20180103003606_testMigration.cs" />
     <Compile Remove="Migrations\20180103003606_testMigration.Designer.cs" />
+    <Compile Remove="Migrations\20180113014902_TestToSeeWhatsWrong.cs" />
+    <Compile Remove="Migrations\20180113014902_TestToSeeWhatsWrong.Designer.cs" />
+    <Compile Remove="Migrations\20180113015109_Test.cs" />
+    <Compile Remove="Migrations\20180113015109_Test.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
